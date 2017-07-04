@@ -1,4 +1,55 @@
-<p>
-  front-end works!
-</p>
-<router-outlet></router-outlet>
+<div id="wrapper">
+  <div id="headerh" class="sticky transparent header-md clearfix">
+
+    <header id="topNavh">
+      <div class="container">
+
+        <!-- Mobile Menu Button -->
+        <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+          <i class="fa fa-bars"></i>
+        </button>
+
+        <ul class="pull-right nav nav-pills nav-second-main">
+
+          <li class="search">
+            <a href="javascript:;">
+              <i style="background:url('assets/img/weibo1.png') no-repeat 0px 8px;padding: 10px;"></i>
+            </a>
+          </li>
+
+        </ul>
+
+        <!-- Logo -->
+        <a class="logo pull-left scrollTo" [routerLink]="['/front-end/about-fee']" style="color:#fff !important;">
+          Front-End Develop
+        </a>
+        <div class="navbar-collapse pull-right nav-main-collapse collapse">
+          <nav class="nav-main">
+
+            <ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+              <li routerLink="/front-end/about-angular" routerLinkActive="active">
+                <a   class="dropdown-toggle" style="color:#fff !important;" >
+                  Angular
+                </a>
+              </li>
+              <li  routerLink="/front-end/about-react" routerLinkActive="active">
+                <a class="dropdown-toggle" style="color:#fff !important;" >
+                  React
+                </a>
+              </li>
+              <li routerLink="/front-end/about-vue" routerLinkActive="active">
+                <a class="dropdown-toggle" style="color:#fff !important;" >
+                  Vue
+                </a>
+              </li>
+            </ul>
+
+          </nav>
+        </div>
+
+      </div>
+    </header>
+
+  </div>
+  <router-outlet></router-outlet>
+</div>

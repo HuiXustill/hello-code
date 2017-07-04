@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { FrontEndComponent } from './front-end.component';
 import { FeeRoutingModule } from './fee-routing.module';
 import { AboutFeeComponent } from './about-fee/about-fee.component';
+import { AboutAngularComponent } from './about-angular/about-angular.component';
+import { AboutReactComponent } from './about-react/about-react.component';
+import { AboutVueComponent } from './about-vue/about-vue.component';
 
 @NgModule({
   imports: [
@@ -12,7 +15,10 @@ import { AboutFeeComponent } from './about-fee/about-fee.component';
   exports: [],
   declarations: [
     FrontEndComponent,
-    AboutFeeComponent
+    AboutFeeComponent,
+    AboutAngularComponent,
+    AboutReactComponent,
+    AboutVueComponent,
   ],
   providers: [],
 })
