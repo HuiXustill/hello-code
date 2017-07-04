@@ -6,10 +6,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: AppComponent,
-    children: [
+  // {
+  //   path: '',
+  //   component: AppComponent,
+    // children: [
   {
     path: 'front-end',
     loadChildren: './front-end/front-end.module#FrontEndModule', //Lazy load front-end module
@@ -22,8 +22,9 @@ const routes: Routes = [
   // },
   // {path: '**', redirectTo: '/account/error404'},
   // {path: 'app/main/dashboard', redirectTo: '/app/main/dashboard'},
-  // {path: '', redirectTo: '/account/login',pathMatch: 'full'},
-    ]}
+  {path: '', redirectTo: '/front-end', pathMatch: 'full'},
+    // ]
+  // }
 ];
 
 @NgModule({
